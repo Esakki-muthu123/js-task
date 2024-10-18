@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Jost", sans-serif;
+    
+
+
+    
+    
+}
+
+/* =================================nav bar============================================================ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+   color: black;
+
+ 
+    
+   
+}
+nav >.left-con{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+nav >.right-con{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav >.right-con>.icon i{
+    border: 1px solid white;
+    padding: 8px;
+  
+    
+
+}
+nav >.right-con>.icon i:hover{
+    background-color: black;
+    color: white;
+}
+nav >.right-con>.card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+    padding: 30px;
+    width: 200px;
+    align-items: center;
+    background-color: rgb(96, 210, 255);
+    color: white;
+    padding-left: 50px;
+}
+
+nav >.left-con>.img-par{
+    
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    border-right:1px solid grey  ;
+
+}
+nav >.left-con>.img-par img{
+    width:100px;
+}
+nav >.left-con>.nav-items{
+   
+    padding: 18px;
+    width: 400px;
+}
+nav >.left-con>.nav-items ul {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+   
+
+    
+}
+nav>.left-con>.nav-items >ul>li>.dropdownlist {
+    list-style-type: none;
+    display: none !important;
+    opacity: 0;
+   
+    position: absolute;
+    right: -600px;
+    z-index: 3;
+    border: 1px solid gray;
+    padding: 100px 0;
+    background-color:whitesmoke;
+    margin: 1px 0 0 0;
+    justify-content: center;
+    width: 1210px;
+
+    /* background-image: linear-gradient(rgba(0,0,0,0.822),rgba(0,0,0,0.822)),url(/assets/image/homeimage/footerin.webp); */
+   
+
+
+}
+nav>.left-con>.nav-items >ul>li>.dropdownlist>.box-1{
+    display: flex;
+   
+  
+   
+
+}
+.dropdownlist{
+    display: flex;
+
+}
+nav>.left-con>.nav-items>ul>li>.dropdownlist ul a:hover{
+    
+    background-color:white;
+}
+
+.dropdownlist img{
+    width: 200px;
+}
+nav>.left-con>.nav-items>ul>li>.dropdownlist li {
+    padding: 0.5rem 0;
+
+}
+
+
+nav>.left-con>.nav-items>ul>li:hover .dropdownlist {
+    display: block !important;
+    opacity: 1;
+    
+
+
+}
+nav>.left-con>.nav-items>ul>li>.dropdownlist li a:hover {
+    color: rgb(51, 192, 248)
+
+}
+
+nav >.left-con>.nav-items ul a{
+    text-decoration: none;
+color: black;
+font-size: 17px;
+padding: 9px;
+transition: 0.5s;
+
+   
+}
+
+nav >.left-con>.nav-items ul a:active{
+    color:rgb(51, 192, 248);
+}
+nav >.left-con>.nav-items ul a:hover{
+   background-color: rgb(65, 218, 218);
+   color: white;
+   border-radius: 20px;
+   
+}
+@media screen(max-width 600px){
+    nav{
+        display:none;
+    }
+}
+/* ============================home-page================================= */
+.home-page>.box img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+}
+.home-page>.box {
+    width: 447.6px;
+
+}
+.home-page{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.home-page>.contant{
+    position: absolute;
+    top: 100px;
+    right: 450px;
+   
+    width: 450px;
+    text-align: center;
+    color: white;
+}
+.home-page>.contant h3{
+ font-size: 30px;
+}
+.home-page>.contant h1{
+    font-size: 60px;padding: 20px 0;
+   }
+   .home-page>.contant h4{
+    font-size: 35px;
+   
+   }.home-page>.contant h2{
+padding: 10px 0;
+   }
+   .home-page>.contant p{
+    padding: 10px;
+   }
+   button{
+    width: 150px;
+    height: 50px;
+
+    border: none;
+    background-color: rgb(65, 218, 218);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+    
+
+   }
+   button a{
+    text-decoration: none;
+    color: white;
+   }
+   button:hover{
+    background-color: #c78a44;
+   }
+   /* =========================================home-bottom=================== */
+   .home-bottom{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+   }
+   .home-bottom>.box{
+  
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+   }
+   .home-bottom>.box p{
+    padding-top: 25px;
+    color: grey;
+   }
+   /* ==================================perfect====================================== */
+   .perfect{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+   }
+   .perfect>.right-con img{
+    width: 100%;
+    height: 100%;
+   }
+   .perfect>.right-con{
+    width: 400px;
+    position: relative;
+    height: 600px;
+    
+   }
+   .perfect>.right-con>.add1{
+    position: absolute;
+    bottom: 30px;
+    left: 120px;
+   }
+   .perfect>.left-con>.flex-top{
+    display: flex;
+    gap: 20px;
+    position: relative;
+   }
+   .perfect>.left-con>.flex-bottom{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    
+   }
+   .perfect>.left-con>.flex-bottom>.box>.add3{
+    position: absolute;
+    bottom: 30px;
+    left: 110px;
+   }
+   .perfect>.left-con>.flex-bottom>.box>.add4{
+    position: absolute;
+    bottom: 30px;
+    right: 110px;
+   }
+   .perfect>.left-con>.flex-top>.box>.add2{
+    position: absolute;
+    bottom: 30px;
+    right: 110px;
+   }
+   .perfect>.left-con>.flex-top>.box img{
+    width: 100%;
+    height: 100%;
+   }
+   .perfect>.left-con>.flex-top>.box {
+    width: 400px;
+    height: 300px;
+   }
+   .perfect>.left-con>.flex-bottom>.box img{
+    width: 100%;
+    height: 100%;
+   }
+   .perfect>.left-con>.flex-bottom>.box {
+    width: 400px;
+    height: 300px;
+
+   
+   }
+   .perfect>.left-con>.flex-top>.box-con{
+
+    padding:60px;
+    width: 400px;
+    text-align: center;
+    
+   }
+   .perfect>.left-con>.flex-top>.box-con p{
+    font-size: 14px;
+    color: #c78a44;
+    padding-bottom: 10px;
+
+   }
+/* ============================================Trendy Collections========================    */
+.Trendy{
+    padding: 40px 0;
+}
+.Trendy>.heading{
+text-align: center;
+}
+.Trendy>.heading h5{
+    color: #c78a44;
+}
+.Trendy>.heading h1{
+    font-size: 40px;
+}
+.Trendy>.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+   
+}
+.Trendy>.flex>.box>.img-par img{
+    width: 100%;
+    height: 100%;
+}
+.Trendy>.flex>.box>.img-par{
+    width: 250px;
+ margin-left: 30px;
+   
+}
+.Trendy>.flex>.box h4{
+    padding: 20px 0;
+    font-size: 20px;
+}
+.Trendy>.flex>.box{
+  width: 320px;
+  text-align: center;
+  padding-bottom: 20px;
+  
+}
+/* ============================Furniture============================= */
+.Furniture>.heading h4{
+    text-transform: uppercase;
+    color: #c78a44;
+}
+.Furniture>.heading h1{
+    font-size: 30px;
+    padding: 15px 0;
+}
+.Furniture>.heading {
+    text-align: center;
+}
+.Furniture>.heading p{
+    width: 60ch;
+margin: auto;
+padding: 10px 0 20px 0;
+}
+.Furniture>.flex{
+    display: flex;
+    padding: 80px 0;
+}
+.Furniture>.flex>.left-con{
+    text-align: center;
+}
+.Furniture>.flex>.left-con h4{
+    text-transform: uppercase;
+}
+.Furniture>.flex>.left-con h1{
+    font-size: 35px;
+    padding: 20px 0;
+}
+.Furniture>.flex>.left-con>.contant>.flex-in>.box{
+    margin: 25px 0;
+    width: 100px;
+    padding: 20px;
+    color:rgb(65, 218, 218) ;
+    background-color: white;
+}
+.Furniture>.flex>.left-con>.contant>.flex-in{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.Furniture>.flex>.left-con>.contant>.flex-in>.box h1{
+    padding: 0;
+}
+.Furniture>.flex>.left-con{
+    width: 50%;
+    background-color: rgb(65, 218, 218);
+    padding: 150px 0;
+    color: white;
+}
+.Furniture>.flex>.left-con>.contant button{
+    border: 1px solid white;
+}
+.Furniture>.flex>.left-con>.contant button:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.Furniture>.flex>.right-con img{
+    width: 100%;
+    height: 100%;
+}
+.Furniture>.flex>.right-con{
+    width: 50%;
+    overflow: hidden;
+}
+/* ==========================================oru blog========================================== */
+.oru-blog{
+   
+    
+    position: relative;
+    
+    
+}
+.oru-blog>.heating{
+   text-align: center;
+    
+    
+}
+.oru-blog>.heating h5{
+    padding: 10px 0;
+    color: #c78a44;
+}
+.oru-blog>.heating h1{
+padding-bottom: 20px;
+font-size: 50px;
+}
+.oru-blog>.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    
+}
+.oru-blog>.flex>.box{
+    
+    width: 300px;
+}
+.oru-blog>.flex>.box>.img-as img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 1s;    
+}
+.oru-blog>.flex>.box>.img-as img:hover{
+    transform: scale(1.2);
+}
+.oru-blog>.flex>.box>.img-as{
+    overflow: hidden;
+}
+.oru-blog>.flex>.box p{
+   
+    color: gray;
+    padding: 15px 0;
+}
+.oru-blog>.flex>.box h4{
+    padding: 10px 0;
+    font-size: 24px;
+}
+.oru-blog>.flex>.box  button{
+    border-radius: 30px;
+    width: 100px;
+  
+   font-size: 11px;
+  
+    border: none;
+margin: 15px 0 0 90px;
+    
+    
+    
+}
+
+/* =========================================galary============================= */
+.galary>.flex>.box  img{
+    width: 100%;
+    height: 100%;transform: translateY(0px);
+    transition: all 1s;    
+    
+}
+.galary>.flex>.box  img:hover{
+    transform:translateY(40px);
+   
+}
+.galary{
+    padding: 80px 0;
+}
+.galary h1{
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.galary h3{
+    color: #c78a44;
+    text-align: center;
+}
+.galary>.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.galary>.flex>.box{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 4px solid black;
+    background-color: black;
+} 
+/* =================================footer==================================================== */
+.footer{
+    display: flex;
+    justify-content: center;
+  gap: 30px;
+  padding: 80px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.822),rgba(0,0,0,0.822)),url(/assets/image/homeimage/foooter.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+.footer>.box img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.footer>.box{
+ 
+    width: 240px;
+}
+.footer>.box h5{
+    color: #DF9438;
+    padding-bottom: 10px;
+}
+.footer p{
+    font-size: 12px;
+    line-height: 30px;
+    color: gray;
+}
+.footer p:hover{
+    color: #DF9438;
+    cursor: pointer;
+}
+.footer>.box>.icon i:hover{
+    background-color: #DF9438;
+}
+.footer>.box>.icon i{
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 12px;
+    color: white;
+
+}
+
+.footer>.box>.icon {
+    padding-top: 20px;
+}
+
+.footer>.box i{
+    color: #DF9438;
+    padding-right: 15px;
+}

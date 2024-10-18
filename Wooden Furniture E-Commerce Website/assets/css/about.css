@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Jost", sans-serif;
+    
+
+
+    
+    
+}
+
+/* =================================nav bar============================================================ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+   color: black;
+
+ 
+    
+   
+}
+nav >.left-con{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+nav >.right-con{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav >.right-con>.icon i{
+    border: 1px solid white;
+    padding: 8px;
+  
+    
+
+}
+nav >.right-con>.icon i:hover{
+    background-color: black;
+    color: white;
+}
+nav >.right-con>.card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+    padding: 30px;
+    width: 200px;
+    align-items: center;
+    background-color: rgb(96, 210, 255);
+    color: white;
+    padding-left: 50px;
+}
+
+nav >.left-con>.img-par{
+    
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    border-right:1px solid grey  ;
+
+}
+nav >.left-con>.img-par img{
+    width:100px;
+}
+nav >.left-con>.nav-items{
+   
+    padding: 18px;
+    width: 400px;
+}
+nav >.left-con>.nav-items ul {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+   
+
+    
+}
+nav>.left-con>.nav-items >ul>li>.dropdownlist {
+    list-style-type: none;
+    display: none !important;
+    opacity: 0;
+   
+    position: absolute;
+    right: -600px;
+    z-index: 3;
+    border: 1px solid gray;
+    padding: 100px 0;
+    background-color:whitesmoke;
+    margin: 1px 0 0 0;
+    justify-content: center;
+    width: 1210px;
+
+    /* background-image: linear-gradient(rgba(0,0,0,0.822),rgba(0,0,0,0.822)),url(/assets/image/homeimage/footerin.webp); */
+   
+
+
+}
+nav>.left-con>.nav-items >ul>li>.dropdownlist>.box-1{
+    display: flex;
+   
+  
+   
+
+}
+.dropdownlist{
+    display: flex;
+
+}
+nav>.left-con>.nav-items>ul>li>.dropdownlist ul a:hover{
+    
+    background-color:white;
+}
+
+.dropdownlist img{
+    width: 200px;
+}
+nav>.left-con>.nav-items>ul>li>.dropdownlist li {
+    padding: 0.5rem 0;
+
+}
+
+
+nav>.left-con>.nav-items>ul>li:hover .dropdownlist {
+    display: block !important;
+    opacity: 1;
+    
+
+
+}
+nav>.left-con>.nav-items>ul>li>.dropdownlist li a:hover {
+    color: rgb(51, 192, 248)
+
+}
+
+nav >.left-con>.nav-items ul a{
+    text-decoration: none;
+color: black;
+font-size: 17px;
+padding: 9px;
+transition: 0.5s;
+
+   
+}
+
+nav >.left-con>.nav-items ul a:active{
+    color:rgb(51, 192, 248);
+}
+nav >.left-con>.nav-items ul a:hover{
+   background-color: rgb(65, 218, 218);
+   color: white;
+   border-radius: 20px;
+   
+}
+button{
+    width: 150px;
+    height: 50px;
+
+    border: none;
+    background-color: rgb(65, 218, 218);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+    
+
+   }
+   button a{
+    text-decoration: none;
+    color: white;
+   }
+   button:hover{
+    background-color: #c78a44;
+   }
+/* =================================home-page=============================== */
+.home-page{
+
+    padding: 110px;
+    background-image: url(/assets/image/about/image1.webp);
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+   
+
+}
+.home-page>.contant{
+   
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+.home-page>.contant h1{
+    font-size: 40px;
+}
+.home-page>.contant>.flex{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+}
+.home-page>.contant>.flex a{
+    text-decoration: none;
+    color: white;
+}
+ /* ==================================perfect====================================== */
+ .perfect{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+   }
+   .perfect>.right-con img{
+    width: 100%;
+    height: 100%;
+   }
+   .perfect>.right-con{
+    width: 400px;
+    position: relative;
+    height: 600px;
+    
+   }
+   .perfect>.right-con>.add1{
+    position: absolute;
+    bottom: 30px;
+    left: 120px;
+   }
+   .perfect>.left-con>.flex-top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+   }
+   .perfect>.left-con>.flex-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    
+   }
+   .perfect>.left-con>.flex-bottom>.box>.add3{
+    position: absolute;
+    bottom: 30px;
+    left: 110px;
+   }
+   .perfect>.left-con>.flex-bottom>.box>.add4{
+    position: absolute;
+    bottom: 30px;
+    right: 110px;
+   }
+   .perfect>.left-con>.flex-top>.box>.add2{
+    position: absolute;
+    bottom: 30px;
+    right: 110px;
+   }
+   .perfect>.left-con>.flex-top>.box img{
+    width: 100%;
+    height: 100%;
+   }
+   .perfect>.left-con>.flex-top>.box {
+    width: 400px;
+    height: 300px;
+   }
+   .perfect>.left-con>.flex-bottom>.box img{
+    width: 100%;
+    height: 100%;
+   }
+   .perfect>.left-con>.flex-bottom>.box {
+    width: 400px;
+    height: 300px;
+
+   
+   }
+   .perfect>.left-con>.flex-top>.box-con{
+
+    padding:60px;
+    width: 400px;
+    text-align: center;
+    
+   }
+   .perfect>.left-con>.flex-top>.box-con p{
+    font-size: 14px;
+    color: #c78a44;
+    padding-bottom: 10px;
+
+   }
+   /* ==============================big-page=============================== */
+   .big-page{
+    
+    padding: 150px;
+    background-image: linear-gradient(rgba(0,0,0,0.322),rgba(0,0,0,0.322)), url(/assets/image/about/image2.jpg);
+    background-size: cover;
+   
+    color: white;
+   }
+   .big-page>.contant{
+    
+    width: 400px;
+    text-align: center;
+    margin: auto;
+   }
+   .big-page>.contant button{
+    background: none;
+    border: 1px solid white;
+   }
+.big-page>.contant h1{
+ font-size: 30px;
+ padding: 20px 0 45px 0;
+}
+.big-page>.contant button:hover{
+    background-color: black;
+    color: white;
+}
+/* ===================================oru-team========================================== */
+.our-team>.flex>.box>.img-par img{
+    width: 100%;
+    height: 100%;
+}
+.our-team>.heating h4{
+    color: #c78a44;
+    text-transform: uppercase;
+}
+.our-team{
+    padding: 70px 0;
+}
+.our-team>.heating h1{
+    font-size: 50px;
+    padding: 10px 0 25px 0;
+}
+.our-team>.heating {
+    text-align: center;
+    margin: auto;
+}
+.our-team>.flex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.our-team>.flex>.box>.img-par {
+    width: 200px;
+    overflow: hidden;
+    border-radius:50%;
+}
+.our-team>.flex>.box h2{
+    padding: 30px 0;
+}
+.our-team>.flex>.box{
+    text-align: center;
+    border: 1px solid grey;
+    width: 300px;
+    padding: 40px;
+}
+/* ===========================foootrt-top=========================================== */
+.footer-top>.flex>.img-par img{
+    width: 100%;
+    height: 100%;
+
+}
+.footer-top{
+    padding: 40px 0;
+    border-top: 1px solid gray;
+}
+.footer-top>.flex>.img-par {
+    width: 200px ;
+    overflow: hidden;
+}
+.footer-top>.flex{
+    display: flex;
+    justify-content:space-around;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+/* =================================footer==================================================== */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  gap: 30px;
+  padding: 80px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.822),rgba(0,0,0,0.822)),url(/assets/image/homeimage/foooter.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+.footer>.box img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.footer>.box{
+ 
+    width: 240px;
+}
+.footer>.box h5{
+    color: #DF9438;
+    padding-bottom: 10px;
+}
+.footer p{
+    font-size: 12px;
+    line-height: 30px;
+    color: gray;
+}
+.footer p:hover{
+    color: #DF9438;
+    cursor: pointer;
+}
+.footer>.box>.icon i:hover{
+    background-color: #DF9438;
+}
+.footer>.box>.icon i{
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 12px;
+    color: white;
+
+}
+
+.footer>.box>.icon {
+    padding-top: 20px;
+}
+
+.footer>.box i{
+    color: #DF9438;
+    padding-right: 15px;
+}
